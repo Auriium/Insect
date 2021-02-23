@@ -12,6 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler.version>11</compiler.version>
+
         <skipJavadoc>true</skipJavadoc>
         <skipSources>true</skipSources>
     </properties>
@@ -29,7 +30,7 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <release>${java.version}</release>
+                        <release>${compiler.version}</release>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -144,13 +145,10 @@
 
     <distributionManagement>
         <repository>
-            <id>solar-repo</id>
-            <url>https://mvn-repo.platinum-mc.com/releases</url>
+            <id>repsy</id>
+            <name>ElytraForceRepo</name>
+            <url>https://repo.repsy.io/mvn/elytraforce/default</url>
         </repository>
-        <snapshotRepository>
-            <id>solar-repo</id>
-            <url>https://mvn-repo.platinum-mc.com/snapshots</url>
-        </snapshotRepository>
     </distributionManagement>
 
     <repositories>
