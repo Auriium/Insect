@@ -153,12 +153,8 @@
 
     <repositories>
         <repository>
-            <id>solar-releases</id>
-            <url>https://mvn-repo.platinum-mc.com/releases</url>
-        </repository>
-        <repository>
-            <id>solar-snapshots</id>
-            <url>https://mvn-repo.platinum-mc.com/snapshots</url>
+            <id>repsy</id>
+            <url>https://repo.repsy.io/mvn/elytraforce/default</url>
         </repository>
     </repositories>
 
