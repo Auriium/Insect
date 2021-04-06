@@ -144,4 +144,17 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>a0phrw82hnl4g-artifactory-primary-0-releases</name>
+            <url>https://aurium.jfrog.io/artifactory/aurium-libs-release-local</url>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <name>a0phrw82hnl4g-artifactory-primary-0-snapshots</name>
+            <url>https://aurium.jfrog.io/artifactory/aurium-libs-snapshot-local</url>
+        </repository>
+    </repositories>
+
 </project>
