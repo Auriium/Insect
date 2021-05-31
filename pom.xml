@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.aurium</groupId>
+    <groupId>xyz.auriium</groupId>
     <artifactId>insect</artifactId>
-    <version>0.2.1</version>
+    <version>0.3.0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -133,28 +133,37 @@
 
     <distributionManagement>
         <repository>
-            <id>jfrog</id>
-            <name>a0phrw82hnl4g-artifactory-primary-0-releases</name>
-            <url>https://aurium.jfrog.io/artifactory/aurium-libs-release-local</url>
+            <id>central-repo</id>
+            <url>https://repo.auriium.xyz/releases</url>
         </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>a0phrw82hnl4g-artifactory-primary-0-snapshots</name>
-            <url>https://aurium.jfrog.io/artifactory/aurium-libs-snapshot-local</url>
+            <id>snapshots-repo</id>
+            <url>https://repo.auriium.xyz/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>jfrog</id>
-            <name>a0phrw82hnl4g-artifactory-primary-0-releases</name>
-            <url>https://aurium.jfrog.io/artifactory/aurium-libs-release-local</url>
+            <id>central-repo</id>
+            <url>https://repo.auriium.xyz/releases</url>
         </repository>
         <repository>
-            <id>snapshots</id>
-            <name>a0phrw82hnl4g-artifactory-primary-0-snapshots</name>
-            <url>https://aurium.jfrog.io/artifactory/aurium-libs-snapshot-local</url>
+            <id>snapshots-repo</id>
+            <url>https://repo.auriium.xyz/snapshots</url>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>central-repo</id>
+            <url>https://repo.auriium.xyz/releases</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots-repo</id>
+            <url>https://repo.auriium.xyz/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
+
 
 </project>

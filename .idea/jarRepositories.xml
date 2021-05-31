@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="insect-core" />
+      <option name="name" value="insect-core" />
+      <option name="url" value="https://aurium.jfrog.io/artifactory/aurium-libs-release-local" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="insect-snapshots" />
+      <option name="name" value="insect-snapshots" />
+      <option name="url" value="https://aurium.jfrog.io/artifactory/aurium-libs-snapshot-local" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -22,9 +32,19 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="jfrog" />
+      <option name="name" value="a0phrw82hnl4g-artifactory-primary-0-releases" />
+      <option name="url" value="https://aurium.jfrog.io/artifactory/aurium-libs-release-local" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="solar-releases" />
       <option name="name" value="solar-releases" />
       <option name="url" value="https://mvn-repo.platinum-mc.com/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="a0phrw82hnl4g-artifactory-primary-0-snapshots" />
+      <option name="url" value="https://aurium.jfrog.io/artifactory/aurium-libs-snapshot-local" />
     </remote-repository>
   </component>
 </project>
