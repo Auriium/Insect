@@ -6,7 +6,7 @@
 
     <groupId>xyz.auriium</groupId>
     <artifactId>insect</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -16,6 +16,10 @@
         <skipJavadoc>true</skipJavadoc>
         <skipSources>true</skipSources>
     </properties>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/Auriium/Insect.git</developerConnection>
+    </scm>
 
     <build>
         <pluginManagement>
@@ -92,6 +96,24 @@
                         <tagNameFormat>@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>make-assembly</id>
+                            <phase>package</phase> <!-- bind to the packaging phase -->
+                            <goals>
+                                <goal>single</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -154,7 +176,6 @@
     </repositories>
 
     <pluginRepositories>
-
         <pluginRepository>
             <id>central-repo</id>
             <url>https://repo.auriium.xyz/releases</url>
