@@ -4,7 +4,7 @@
 
     <groupId>xyz.auriium</groupId>
     <artifactId>insect</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.2</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -17,7 +17,8 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/Auriium/Insect.git</developerConnection>
-    </scm>
+      <tag>0.3.2</tag>
+  </scm>
 
     <build>
         <pluginManagement>
